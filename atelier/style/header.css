@@ -1,0 +1,110 @@
+
+.headerNav{
+    background-color: whitesmoke;
+    padding: 39px 110px;
+}
+.navBar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.navLogo{
+    max-width: 300px;
+}
+.navBar-menu{
+    display: flex;
+    align-items: center;
+    gap: 6em;
+}
+.navLink{
+    font-size: large;
+    padding: 8px 10px;
+    transition: background 0.3s ease-in-out;
+}
+.navBar-item  :hover{
+      background-color: grey;
+}
+.bannerContainer{
+    position: relative;
+}
+
+    /* seccion banner*/
+.banner{
+    background-image: url(../image/bannerMod.jpg);
+    padding: 12.8rem;
+   background-size: cover;
+    background-attachment: fixed;
+    
+}
+.bannerContent{
+    display: flex;
+    flex-direction: column;
+}
+.bannerTitulo{
+    font-size: 5.9em ;
+    font-family: "Lora", serif;
+    font-style: normal;
+    text-align: center;
+}
+
+/*seccion footer*/
+
+.footer{
+    padding: 39px 110px;
+   
+}
+.footerContainer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.menuCentro{
+    border-left: 2px solid #D7D7D8;
+    border-right: 2px solid #D7D7D8;
+    padding-left: 63px;
+    padding-right: 63px;
+}
+.footerMenu h5{
+
+    margin-bottom: 10px;
+
+}
+.menuCentro p{
+    
+    display: inline-block;
+    text-align: center;
+    margin-right: 0.8em;
+    
+    
+}
+@media (max-width:768px){
+    .footer{
+        padding: 42px 30px;
+        text-align: center;
+        /*gap: 2em;*/
+        
+    }
+    .menuCentro p{
+        display: inline-block;
+    }
+    .footerMenu{
+        margin-bottom: 5px;
+    }
+
+}
+
+
+
+
+@media (max-width:802px){
+    .navBar{
+        
+        justify-content: center;
+        gap: 2em;
+        
+    }
+
+
+}
