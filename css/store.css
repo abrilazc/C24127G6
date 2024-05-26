@@ -24,30 +24,34 @@ h2  {
   font-size: 50px;
 }
 
-#verano{
-  border: 2px dotted blue;
+#invierno, #primavera, #verano, #otono{
   display: grid;
-  grid-template-columns: repeat(4, auto);
+  grid-template-columns: repeat(4, 24.2%);
   column-gap: 1%;
+  margin-bottom: 10%;
 }
 
 .prendas {
-  border: 1px solid yellow;
-  height: fit-content;
+  margin-bottom: 10%;
 }
 
-.prendas img {
+.imagen {
   width: 100%;
-  height: 200px;
+  height: 70%;
+  overflow: hidden;
+}
+
+.imagen img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  margin: auto;
 }
 
 .prendas h3 {
   text-align: center;
   font-size: 25px;
-}
-
-.descrip {
-  font-size: 12px;
+  margin: 5%;
 }
 
 .precio {
@@ -57,12 +61,13 @@ h2  {
   margin: 0px 20px;
 }
 
-.cantidad {
-    display: inline-block;
-}
-
 .botones {
   text-align: center;
+  margin-top: 5%;
+}
+
+.cantidad {
+    display: inline-block;
 }
 
 .disminucion,.incremento {
@@ -111,3 +116,21 @@ h2  {
   background-color: #000;
   color: #FFF;
 }
+
+@media (max-width: 992px) and (min-width: 700px) {
+  #invierno, #primavera, #verano, #otono{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    column-gap: 1%;
+    margin-bottom: 10%;
+  }
+} 
+
+@media (max-width: 700px) {
+  #invierno, #primavera, #verano, #otono{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    column-gap: 1%;
+    margin-bottom: 10%;
+  }
+} 
