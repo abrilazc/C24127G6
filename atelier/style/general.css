@@ -21,7 +21,7 @@ a{
     color: inherit;/*color heredado de letra*/
 }
 header,footer{
-    background-color: whitesmoke;
+    background-color: #c2c2c2;
 }
 ul,ol{
     list-style-type: none;
