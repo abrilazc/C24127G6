@@ -1,23 +1,55 @@
 @import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
 /* Letra para los títulos; font-family: 'Darker Grotesque';
   Letra para los parrafos; font-family: "Lora", serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&display=swap');
+/* Letra de la marca */
 
 body {
   width: 100%;
   margin: 0;
 }
 
-h1,h2,h3 {
+header{
+  height: 70px;
+  display: inline-flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+header img {
+  height: 70px;
+  float: left;
+  margin-left: 20%;
+}
+
+header h1 {
+  font-family: "Monsieur La Doulaise", cursive;
+  font-style: italic;
+  font-weight: 100;
+  font-size: 50px;
+  align-items: center;
+}
+
+header nav {
+  font-size: 0.8em;
+  float: inline-end;
+  text-align: right;
+  margin-right: 20%;
+}
+
+h2,h3 {
   font-family: 'Darker Grotesque';
 }
 
 p {
   font-family: 'Lora';
+  font-size: smaller;
+  color: #FFF;
 }
 
 main {
   width: 90%;
-  padding-left: 5%;
+  margin: auto;
 }
 
 h2  {
@@ -26,13 +58,14 @@ h2  {
 
 #invierno, #primavera, #verano, #otono{
   display: grid;
-  grid-template-columns: repeat(4, 24.2%);
+  grid-template-columns: repeat(4, 4fr);
   column-gap: 1%;
   margin-bottom: 10%;
 }
 
 .prendas {
-  margin-bottom: 10%;
+  height: 400px;
+  margin-bottom: 2%;
 }
 
 .imagen {
@@ -117,10 +150,56 @@ h2  {
   color: #FFF;
 }
 
+footer{
+  height: 120px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer img{
+  height: 110px;
+  float: left;
+  margin-left: 20%;
+}
+
+footer #horarios p{
+  color: #000;
+}
+
+#horarios ul {
+  font-size: small;
+}
+
+#horarios li {
+  padding-left: 10%;
+}
+
+#redes {
+  margin-right: 5%;
+}
+
+#redes li{
+  display: inline-flex;
+}
+
+#redes img{
+  width: 32px;
+  height: 32px;
+  display: inline;
+  padding-top: 0.2em;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
 @media (max-width: 992px) and (min-width: 700px) {
   #invierno, #primavera, #verano, #otono{
     display: grid;
-    grid-template-columns: repeat(3, auto);
+    grid-template-columns: repeat(3, 3fr);
     column-gap: 1%;
     margin-bottom: 10%;
   }
