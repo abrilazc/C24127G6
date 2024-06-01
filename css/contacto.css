@@ -1,8 +1,12 @@
 .contactMainBox {
     max-width: 50%;
-    float: left;
+    align-items: left;
 }
 .asideImg{
     max-width: 50%;
-    float: right;
+    align-items: right;
+}
+
+label {
+    font-size: medium;
 }
