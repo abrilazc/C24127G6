@@ -1,0 +1,52 @@
+/*letra titulo*/
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap'); 
+/*letra texto*/
+@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;/* esto equivale a 10px*/
+    color: black;
+    font-family: "Darker Grotesque", sans-serif;
+    font-style: normal;
+  
+}
+a{
+    text-decoration: none;
+    font-size: 1em;/*20px*/
+    color: inherit;/*color heredado de letra*/
+}
+header,footer{
+    background-color: #c2c2c2;
+}
+ul,ol{
+    list-style-type: none;
+
+}
+p{
+    font-size: 1.8em /*18px*/;
+}
+h5{
+    font-size: 1.5em ;
+    font-family: "Lora", serif;
+    font-style: normal;
+    color: inherit;
+}
+h1{
+    font-size: 5.9em ;
+    font-family: "Lora", serif;
+    font-style: normal;
+    text-align: center;
+}
+img{
+    width: 100%;
+}
+.container{
+    max-width: 1200px;
+    margin:  0 auto;
+}
+
