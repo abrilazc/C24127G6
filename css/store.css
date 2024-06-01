@@ -30,7 +30,7 @@ h2  {
 }
 
 .prendas {
-  height: 400px;
+  height: 500px;
   margin-bottom: 2%;
 }
 
@@ -120,18 +120,22 @@ h2  {
 
 /* Resposive para tamaño tableta */
 @media (max-width: 992px) and (min-width: 700px) {
+  h2 {
+    font-size: 4em;
+  }
+
   #invierno, #primavera, #verano, #otono {
     display: grid;
     grid-template-columns: repeat(3, 3fr);
     column-gap: 1%;
-    margin-bottom: 10%;
+    margin-bottom: 5%;
   }
 } 
 
 /* Resposive para tamaño celular */
 @media (max-width: 700px) {
   h2 {
-    font-size: 2em;
+    font-size: 4em;
   }
 
   #invierno, #primavera, #verano, #otono {
@@ -141,7 +145,11 @@ h2  {
     margin-bottom: 10%;
   }
 
+  .prendas {
+    height: 500px;
+  }
+
   .prendas h3 {
-    font-size: 1.3em;
+    font-size: 2.5em;
   }
 } 
