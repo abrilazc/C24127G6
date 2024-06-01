@@ -23,7 +23,7 @@
     transition: background 0.3s ease-in-out;
 }
 .navBar-item  :hover{
-      background-color: grey;
+    background-color: grey;
 }
 .bannerContainer{
     position: relative;
@@ -33,7 +33,7 @@
 .banner{
     background-image: url(../image/bannerMod.jpg);
     padding: 12.8rem;
-   background-size: cover;
+    background-size: cover;
     background-attachment: fixed;
     
 }
@@ -52,7 +52,6 @@
 
 .footer{
     padding: 39px 110px;
-   
 }
 .footerContainer{
     display: flex;

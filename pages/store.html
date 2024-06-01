@@ -4,28 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/general.css">
+    <link rel="stylesheet" href="/css/header.css">
     <link rel="stylesheet" href="/css/store.css">
     <link rel="shortcut icon" href="/img/favicon/favicon.ico" type="image/x-icon">
     <title>Tienda</title>
 </head>
 <body>
-    <header>
-        <div>
-            <img src="/img/logo/logo.png" alt="El logo de: El Atelier">
-        </div>
-        <div>
-            <h1>El Atelier</h1>
-        </div>
-        <div>
-            <nav>
-                <ul>
-                    <a href="index.html"><li>HOME</li></a>
-                    <a href="contacto.html"><li>CONTACTO</li></a>
-                    <a href="colecciones.html"><li>COLECCIONES</li></a>
-                    <a href="tienda.html"><li>TIENDA</li></a>
-                </ul>
-            </nav>
-        </div>
+    <header class="headerNav">
+
+        <nav class="navBar ,container">
+
+            <picture class="navLogo">
+                <img src="/img/index/Atelierlogo1.png" alt="Logo de El Atelier">
+            </picture>
+
+            <ul class="navBar-menu">
+                <li class="navBar-item"><a href="index.html" class="navLink">Inicio</a></li>
+                <li class="navBar-item"><a href="/pages/coleciones" class="navLink">Colecciones</a></li>
+                <li class="navBar-item"><a href="/pages/store.html" class="navLink">Tienda</a></li>
+                <li class="navBar-item"><a href="/pages/contacto.html" class="navLink">Contacto</a></li>
+            </ul>
+
+        </nav>
+
     </header>
 
     <main>
@@ -473,37 +474,34 @@
 
     </main>
 
-    <footer>
-            <div>
-                <img src="/img/logo/logo.png" alt="Imagen del logo de El Atelier">
+    <footer class="footer">
+        
+        <div class="footerContainer">
+
+            <div class="footerMenu">
+                <p><a href="index.html">Inicio</a></p>
+                <p><a href="/pages/colecciones">Colecciones</a></p>
+                <p><a href="/pages/store.html">Tienda</a></p>
+                <p><a href="/pages/contacto.html">Contacto</a></p>
             </div>
 
-            <div id="horarios">
-                <p>Horarios de atención</p>
-                <div>
-                    <ul>
-                        <ul>Lunes a Viernes</ul>
-                            <li>8:00 a 12:00</li>  
-                            <li>16:00 a 21:00</li> 
-                        <ul>Sábados</ul>
-                            <li>9:00 a 13:00</li>
-                    </ul>
-                </div>
+            <div class="footerMenu menuCentro">
+                <h5>Siguenos en nuestra redes</h5>
+                <p><a href="https://www.facebook.com/"> <iconify-icon icon="ic:baseline-facebook"  style="color: black"></iconify-icon></a></p>
+                <p><a href="https://www.instagram.com/"><iconify-icon icon="ri:instagram-fill"  style="color: black"></iconify-icon></a></p>
+                <p><a href="https://x.com/"><iconify-icon icon="prime:twitter"  style="color: black"></iconify-icon></a></p>
             </div>
-
-            <div id="redes">
-                <div>
-                    <h3>Redes Sociales</h3>
-                </div>
-                <div>
-                    <ul>
-                        <a href="https://www.facebook.com/"><li><img src="/img/redes/facebook.png" alt="Logo de nuestra pagina de facebook"></li></a>
-                        <a href="https://www.instagram.com/"><li><img src="/img/redes/instagram.png" alt="Logo de nuestra pagina de instagram"></li></a>
-                        <a href="https://www.tiktok.com/es/"><li><img src="/img/redes/tiktok.png" alt="Logo de nuestra pagina de tiktok"></li></a>
-                    </ul>
-                </div>
+            <div class="footerMenu">
+                <h5>Integrantes</h5>
+                <p>Avril</p>
+                <p>Elizabeth</p>
+                <p>Pablo</p>
+                <p>Veruska</p>
             </div>
+        </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@2.1.0/dist/iconify-icon.min.js"></script>
     <script src="/js/store.js"></script>
 </body>
 </html>

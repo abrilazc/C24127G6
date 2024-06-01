@@ -1,149 +1,51 @@
-@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
-/* Letra para los títulos: font-family: 'Darker Grotesque';*/
-/* Letra para los parrafos: font-family: "Lora", serif; */
-@import url('https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&display=swap');
-/* Letra de la marca: font-family: "Monsieur La Doulaise", cursive;*/
+/*letra titulo*/
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap'); 
+/*letra texto*/
+@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300..900&display=swap');
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;/* esto equivale a 10px*/
     color: black;
     font-family: "Darker Grotesque", sans-serif;
+    font-style: normal;
 }
-
-header,footer{
-    background-color: whitesmoke;
-}
-
-header{
-    height: 4.5em;
-    display: inline-flex;
-    width: 100%;
-    justify-content: space-between;
-}
-
-header img {
-    height: 4.3em;
-    float: left;
-    align-items: center;
-    margin-left: 20%;
-    margin-top: 0.08em;
-}
-
-header h1 {
-    font-family: "Monsieur La Doulaise", cursive;
-    font-style: italic;
-    font-weight: 100;
-    font-size: 3.2em;
-    margin-top: 0.08em;
-}
-
-header nav {
-    font-size: 0.8em;
-    float: inline-end;
-    text-align: right;
-    margin-right: 20%;
-}
-
-ul,ol{
-    list-style-type: none;
-}
-
 a{
     text-decoration: none;
     font-size: 1em;/*20px*/
     color: inherit;/*color heredado de letra*/
 }
+header,footer{
+    background-color: #c2c2c2;
+}
+ul,ol{
+    list-style-type: none;
 
-footer{
-    height: 120px;
-    display: flex;
+}
+p{
+    font-size: 1.8em /*18px*/;
+}
+h5{
+    font-size: 1.5em ;
+    font-family: "Lora", serif;
+    font-style: normal;
+    color: inherit;
+}
+h1{
+    font-size: 5.9em ;
+    font-family: "Lora", serif;
+    font-style: normal;
+    text-align: center;
+}
+img{
     width: 100%;
-    justify-content: space-between;
-    align-items: center;
+}
+.container{
+    max-width: 1200px;
+    margin:  0 auto;
 }
 
-footer img{
-    height: 110px;
-    float: left;
-    margin-left: 20%;
-}
-
-footer #horarios p{
-    color: #000;
-}
-
-#horarios ul {
-    font-size: small;
-}
-
-#horarios li {
-    padding-left: 10%;
-}
-
-#redes {
-    margin-right: 5%;
-}
-
-#redes li{
-    display: inline-flex;
-}
-
-#redes img{
-    width: 32px;
-    height: 32px;
-    display: inline;
-    padding-top: 0.2em;
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
-}
-
-/* Resposive para tamaño tableta */
-@media (max-width: 992px) and (min-width: 700px) {
-    h1 {
-        font-size: 2em;
-    }
-} 
-
-/* Resposive para tamaño celular */
-@media (max-width: 700px) {
-    header h1 {
-        font-size: 2.5em; 
-        margin-top: 0.3em;
-    }
-
-    li {
-        font-size: 0.9em;
-        margin-top: 0.1em;
-    }
-    
-    #redes h3{
-        font-size: 1em;
-        font-family: "Lora", serif;
-        font-weight: 100;
-    }
-    
-    #redes li{
-        display: inline-flex;
-    }
-
-    #redes ul {
-        text-align: center;
-    }
-    
-    #redes img{
-        width: 24px;
-        height: 24px;
-        display: inline;
-        padding-top: 0.2em;
-        border-radius: 10px;
-        -webkit-border-radius: 10px;
-        -moz-border-radius: 10px;
-        -ms-border-radius: 10px;
-        -o-border-radius: 10px;
-    }
-}
