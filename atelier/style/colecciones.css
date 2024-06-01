@@ -1,0 +1,64 @@
+@import url(../style/header.css);
+@import url(../style/general.css);
+
+.slider{
+    display: flex;
+    flex-direction: column;
+    gap: 3.6rem;
+    margin: 6.8rem auto;
+}
+.sliderTitulo{
+    font-family: "Lora", serif;
+    font-size: 4.6em;
+    text-transform: uppercase;
+
+}
+.sliderItems{
+    display: flex;
+    gap: 2.4em;
+}
+.pictureContenedor{
+   display: flex;
+    position: relative;
+}
+.cardItem-etiqueta{
+    font-size: 1.2em;
+    text-transform: uppercase;
+    background-color: gray;
+    color: black;
+    padding: 0.8rem 1.2rem;
+    position: absolute;
+   
+}
+.carItem-content{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    padding: 1.6rem;
+
+}
+
+.carItem-tipo{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.carItem-title{
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+.carItem-price{
+    font-size: 1.6rem;
+    
+}
+.cardItem-cuotas{
+    font-size: 1.2rem;
+    color: #1d84b5;
+    font-weight: 700;
+}
+img{
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+img:hover{
+    transform: scale(1.1); 
+    filter: brightness(1.2); 
+}
